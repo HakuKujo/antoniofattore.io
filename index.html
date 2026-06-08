@@ -404,18 +404,18 @@
     <div class="about-left">
       <div class="hud">ID::A_F — MONTEUR_VFX — ALTERNANT</div>
       <div class="about-name">Antonio<em>Fattore</em></div>
-      <div class="about-role">Monteur vidéo &amp; Motion designer :: Valenciennes, FR</div>
+      <div class="about-role">Monteur vidéo :: Valenciennes, FR</div>
       <div class="about-bio">
         Étudiant en alternance spécialisé en montage vidéo et VFX. Passionné par la post-production, la 3D et la création de contenu visuel fort. À la recherche d'une entreprise pour approfondir ces compétences en conditions réelles.
       </div>
       <div class="about-info-grid">
         <div class="about-info-row">
           <span class="key">Formation</span>
-          <span class="val">BTS Jean Rostand — Roubaix</span>
+          <span class="val">BTS Montage et Post-Production </span>
         </div>
         <div class="about-info-row">
           <span class="key">Statut</span>
-          <span class="val accent">Disponible pour une alternance, 2026-2027</span>
+          <span class="val accent">Disponible pour une alternance, 2026-2028</span>
         </div>
         <div class="about-info-row">
           <span class="key">Localisation</span>
@@ -502,27 +502,30 @@
           <div class="contact-link-icon">◈</div>
           <div>
             <div class="contact-link-label">Localisation</div>
-            <div class="contact-link-val">Valenciennes, Hauts-de-France</div>
+            <div class="contact-link-val">Valenciennes, Avec possibilité de déménagement</div>
           </div>
         </div>
       </div>
     </div>
 
+    
     <div class="contact-right">
       <div class="form-title">// envoyer un message</div>
-      <div class="form-group">
-        <label class="form-label">Nom / Entreprise</label>
-        <input class="form-input" type="text" placeholder="Acme Studio...">
-      </div>
-      <div class="form-group">
-        <label class="form-label">Email</label>
-        <input class="form-input" type="email" placeholder="contact@studio.fr">
-      </div>
-      <div class="form-group">
-        <label class="form-label">Message</label>
-        <textarea class="form-textarea" placeholder="Bonjour, nous recherchons un alternant pour..."></textarea>
-      </div>
-      <button class="form-submit">Envoyer le message</button>
+      <form action="https://formspree.io/f/xeewgdba" method="POST">
+        <div class="form-group">
+          <label class="form-label">Nom / Entreprise</label>
+          <input class="form-input" type="text" name="name" placeholder="Acme Studio..." required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input class="form-input" type="email" name="email" placeholder="contact@studio.fr" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" name="message" placeholder="Bonjour, nous recherchons un alternant pour..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Envoyer le message</button>
+      </form>
       <div class="form-note">SYS::TRANSMISSION_SÉCURISÉE — RÉPONSE SOUS 48H</div>
     </div>
 
